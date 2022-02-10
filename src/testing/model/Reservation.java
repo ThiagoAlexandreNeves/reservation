@@ -39,7 +39,8 @@ public class Reservation {
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 	}
-
+	
+	//Calculando o tempo entre checkIn e checkOut
 	public long duration() {
 		long diff = checkOut.getTime() - checkIn.getTime();
 		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
