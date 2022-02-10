@@ -26,7 +26,8 @@ public class Reservation {
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 	}
-
+	
+	//Validando a atualização das datas
 	public void update(Date checkIn, Date checkOut) throws DomainException {
 		Date now = new Date();
 		if (!checkOut.after(checkIn)) {
